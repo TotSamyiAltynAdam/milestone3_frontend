@@ -18,7 +18,6 @@ body{
 
 .main_block {
     min-height: 803px;
-    border: 1px solid red;
 }
 
 
@@ -27,21 +26,20 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 186px;
-    border: 1px solid red;
 }
 
-.main_block nav img {
+.main_block nav a .logo {
     width: 165px;
     height: 146px;
 }
 
-.main_block nav .button {
+.main_block nav .logIng_btn {
+    cursor: pointer;
     width: 165px;
     height: 49px;
     border-radius: 35px;
     background-color: #2D9E84;
-
-    padding-top: 10px;
+    border: none;
     text-align: center;
     color: white;
     font-size: 25px;
@@ -72,27 +70,28 @@ body{
 .main_block .main_panel .main_action .cafeteria_choosing {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     min-width: 270px;
 }
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria{
+.main_block .main_panel .main_action .cafeteria_choosing .cafeteria a{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
 }
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria:nth-child(2){
-    margin-top: 16px;
-    margin-left: 89px;
+.main_block .main_panel .main_action .cafeteria_choosing .cafeteria:nth-child(2) {
+    margin-top: 10%;
+    margin-left: 30%;
 }
 .main_block .main_panel .main_action .cafeteria_choosing .cafeteria:nth-child(3){
-    margin-top: 16px;
-    margin-left: 176px;
+    margin-top: 10%;
+    margin-left: 50%;
 }
 
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria img{
+.main_block .main_panel .main_action .cafeteria_choosing .cafeteria a img{
     width: 75px;
     height: 75px;    
 }
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria span{
+.main_block .main_panel .main_action .cafeteria_choosing .cafeteria a span{
     margin-top: 15px;
     font-size: 20px;
     font-weight: 500;
@@ -102,7 +101,6 @@ body{
 .main_block .main_panel .main_action .search_food{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     width: 525px;
     padding-top: 26px;
 }
@@ -113,6 +111,7 @@ body{
 }
 .main_block .main_panel .main_action .search_food .search_input .left_part{
     background-color: #2D9E84;
+    cursor: pointer;
     width: 93px;
     height: 80px;
     border-radius: 33px 0 0 33px;
@@ -125,58 +124,56 @@ body{
     height: 67px;
 }
 .main_block .main_panel .main_action .search_food .search_input .right_part{
-    font-size: 20px;
+    cursor: pointer;
     font-weight: bold;
     width: 432px;
-    border-radius: 0 33px 33px 0;
-    color: #AEABAB;
-    padding: 29px 0 0 29px;
+    border: none;
     background-color: white;
+    border-radius: 0 33px 33px 0;
+    padding-left: 29px;
+    color: #AEABAB;
+    font-size: 20px;
 }
 
-.main_block .main_panel .main_action .search_food .optimal_food{
+.main_block .main_panel .main_action .search_food .optimal_food_btn{
+    cursor: pointer;
     margin: 0 auto;
     margin-top: 168px;
     width: 255px;
     height: 81px;
     border-radius: 16px;
+    border: none;
     background-color:white;
-}
-.main_block .main_panel .main_action .search_food .optimal_food center{
-    padding-top: 23px;
-    color: #FFCA5B;
     font-weight: bold;
+    color: #FFCA5B;
     font-size: 30px;
 }
-
 
 .main_block .main_panel .main_action .food_choosing {
     display: flex;
     flex-direction: column;
     width: 270px;
     margin-left: 15px;
-    border: 1px solid red;
+    justify-content: space-around;
 }
-.main_block .main_panel .main_action .food_choosing .food{
+.main_block .main_panel .main_action .food_choosing .food:nth-child(1){
+    margin-left: 100%;    
+}
+.main_block .main_panel .main_action .food_choosing .food:nth-child(2){
+    margin-left: 50%;
+}
+
+.main_block .main_panel .main_action .food_choosing .food a{
+    text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: column;
 }
-.main_block .main_panel .main_action .food_choosing .food:nth-child(1){
-    margin-left: 180px;    
-}
-.main_block .main_panel .main_action .food_choosing .food:nth-child(2){
-    margin-top: 16px;    
-    margin-left: 90px;
-}
-.main_block .main_panel .main_action .food_choosing .food:nth-child(3){
-    margin-top: 16px;    
-}
-
-.main_block .main_panel .main_action .food_choosing .food img{
+.main_block .main_panel .main_action .food_choosing .food a img{
     width: 75px;
     height: 75px;
 }
-.main_block .main_panel .main_action .food_choosing .food span{
+.main_block .main_panel .main_action .food_choosing .food a span{
     margin-top: 15px;
     font-size: 20px;
     font-weight: 500;
@@ -184,4 +181,94 @@ body{
 
 .main_block .polygon{
     margin-top: 30px;
+    height: 94px;
+}
+.main_block .polygon img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.dish_block{
+    background-color: white;
+}
+
+.dish_block .dish_title{
+    display: flex;
+    align-items: center;
+}
+.dish_block .dish_title span{
+    margin-left: 11px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.dish_content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.dish_content .food_type_list {
+    margin-left: 46%;
+    display: flex;
+    color: #FFCA5B;
+    font-weight: bold;
+    font-size: 24px;
+}
+.dish_content .food_type_list .food_type_list_name {
+    width: 165px;
+    text-align: center;
+}
+.dish_content .food_type_list .food_type_list_name:nth-child(2), .food_type_list_name:nth-child(3){
+    margin-left: 50px;
+}
+
+.dish_content .cafeterias{
+    display: flex;
+    flex-direction: column;
+}
+.dish_content .cafeterias .cafeteria{
+    display: flex;
+    justify-content: space-around;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_name{
+    margin-top: 102px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    width: 255px;
+    font-weight: bold;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food{
+    display: flex;
+    flex-direction: column;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food .cafeteria_food_type{
+    display: flex;
+    margin-top: 22px;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food .cafeteria_food_type .cafeteria_food_time_title{
+    margin-top: 33px;
+    width: 125px;
+    color: #FFCA5B;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food .cafeteria_food_type .cafeteria_food_time_setOfFood{
+    display: flex;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food .cafeteria_food_type .cafeteria_food_time_setOfFood img{
+    width: 165px;
+    height: 83px;
+    border-radius: 14px;
+}
+.dish_content .cafeterias .cafeteria .cafeteria_food .cafeteria_food_type .cafeteria_food_time_setOfFood img:nth-child(2), img:nth-child(3){
+    margin-left: 50px;
+}
+.dish_content .cafeterias .cafeteria_divider_line{
+    margin-top: 22px;
+    height: 2px;
+    width: 100%;
+    background-color: #FFCA5B;
 }

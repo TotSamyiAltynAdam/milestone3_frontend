@@ -12,10 +12,12 @@
     <div class="main_block">
         <div class="container">
             <nav>
-                <img src="icons/Logo.png" alt="logo">
-                <div class="button">
+                <a href="#">
+                    <img src="icons/Logo.png" alt="logo" class="logo">
+                </a>
+                <button class="logIng_btn">
                     Log In
-                </div>
+                </button>
             </nav>
             <div class="main_panel">
                 <div class="main_title">
@@ -24,43 +26,54 @@
                 <div class="main_action">
                     <div class="cafeteria_choosing">
                         <div class="cafeteria">
-                            <img src="icons/cafeteria_1.png" alt="cafeteria1">
-                            <span>Cafeteria-1</span>
+                            <a href="#">
+                                <img src="icons/cafeteria_1.png" alt="cafeteria1">
+                                <span>Cafeteria-1</span>
+                            </a>
                         </div>
                         <div class="cafeteria">
-                            <img src="icons/cafeteria_2.png" alt="cafeteria2">
-                            <span>Cafeteria-2</span>
+                            <a href="#">
+                                <img src="icons/cafeteria_2.png" alt="cafeteria2">
+                                <span>Cafeteria-2</span>
+                            </a>
                         </div>
                         <div class="cafeteria">
-                            <img src="icons/cafeteria_3.png" alt="cafeteria3">
-                            <span>Cafeteria-3</span>
+                            <a href="#">
+                                <img src="icons/cafeteria_3.png" alt="cafeteria3">
+                                <span>Cafeteria-3</span>
+                            </a>
                         </div>
                     </div>
                     <div class="search_food">
                         <div class="search_input">
-                            <div class="left_part">
+                            <label class="left_part" for="searchFoodInput">
                                 <img src="icons/search_restaurant.svg" alt="search_restaurant">
-                            </div>
-                            <div class="right_part">
-                                The name of food
-                            </div>
+                            </label>
+                            <input id="searchFoodInput" class="right_part" placeholder="The name of food">
+                            </input>
                         </div>
-                        <div class="optimal_food">
-                            <center>Optimal food</center>
-                        </div>
+                        <button class="optimal_food_btn">
+                            Optimal food
+                        </button>
                     </div>
                     <div class="food_choosing">
                         <div class="food">
-                            <img src="icons/korean.png" alt="korean">
-                            <span>Korean</span>
+                            <a href="#">
+                                <img src="icons/korean.png" alt="korean">
+                                <span>Korean</span>
+                            </a>
                         </div>
                         <div class="food">
-                            <img src="icons/halal.png" alt="halal">
-                            <span>Halal</span>
+                            <a href="#">
+                                <img src="icons/halal.png" alt="halal">
+                                <span>Halal</span>
+                            </a>
                         </div>
                         <div class="food">
-                            <img src="icons/vegeterian.png" alt="vegeterian">
-                            <span>Vegeterian</span>
+                            <a href="#">
+                                <img src="icons/vegeterian.png" alt="vegeterian">
+                                <span>Vegeterian</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,6 +81,107 @@
         </div>
         <div class="polygon">
             <img src="img/polygon.png" alt="polygon">
+        </div>
+    </div>
+    <div class="dish_block">
+        <div class="container">
+            <div class="dish_title">
+                <img src="icons/actual.png" alt="actualDay">
+                <span>Today's dishes - 23.05.2023 Tuesday</span>
+            </div>
+            <section class="dish_content">
+                <div class="food_type_list">
+                    <div class="food_type_list_name">Halal</div>
+                    <div class="food_type_list_name">Korean</div>
+                    <div class="food_type_list_name">Vegeterian</div>
+                </div>
+                <div class="cafeterias">
+
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-1</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="lunchHalal">
+                                    <img src="img/beshbarmak.jpg" alt="lunchKorean">
+                                    <img src="img/beshbarmak.jpg" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerHalal">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerKorean">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+                    
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-2</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="lunchHalal">
+                                    <img src="img/beshbarmak.jpg" alt="lunchKorean">
+                                    <img src="img/beshbarmak.jpg" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerHalal">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerKorean">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-3</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="lunchHalal">
+                                    <img src="img/beshbarmak.jpg" alt="lunchKorean">
+                                    <img src="img/beshbarmak.jpg" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerHalal">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerKorean">
+                                    <img src="img/beshbarmak.jpg" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
